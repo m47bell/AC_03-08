@@ -8,8 +8,9 @@ import java.util.Scanner;
  * and figures out if it is a weekday or weekend.
  *
  */
-public class dayofweek {
-    public static void main(String[] args){
+
+/*
+
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a date for the month of March: ");
         int date = input.nextInt();
@@ -19,25 +20,33 @@ public class dayofweek {
 
         //if(date == 1,8,15,22,29)
          System.out.println("");
-/*
-solution
+*/
+
+
+public class dayofweek {
+    public static void main(String[] args){
 
 Scanner input = new Scanner(System.in);
         System.out.print("What day is it?: ");
         String day = input.next();
 
-        if (day.equalsIgnoreCase("Monday")
-            ||day.equalsIgnoreCase("Tuesday")
-            ||day.equalsIgnoreCase("Tuesday"))
+        if ((day.equalsIgnoreCase("Monday"))
+            ||(day.equalsIgnoreCase("Tuesday"))
+            ||(day.equalsIgnoreCase("Wednesday"))
+            ||(day.equalsIgnoreCase("Thursday"))
+            ||(day.equalsIgnoreCase("Friday")))
 
            System.out.println("Its a Weekday");
 
-           else if (day.equalsIgnoreCase("sunday")
-                ||day.equalsIgnoreCase("Saturday"))
+           else {
+            if ((day.equalsIgnoreCase("Sunday")
+                    || (day.equalsIgnoreCase("Saturday"))))
+
+            System.out.println("Its a Weekend");
+        }
 
 
 
- */
 
 
 
